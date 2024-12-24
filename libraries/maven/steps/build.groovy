@@ -1,5 +1,5 @@
 void call(){
-  agent{ label 'slave'}
+  node { label 'slave'}
 
   stage("a"){
     println("build maven project")
