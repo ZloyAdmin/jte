@@ -1,6 +1,4 @@
 void call(){
-  node { label 'slave'}
-
   stage("a"){
     println("build maven project")
   }
@@ -11,6 +9,9 @@ void call(){
     println("cccc")
   }
   stage("d"){
+
+    node { label 'slave'}
+
     sh "ls -l && hostname"
   }
 }
