@@ -5,4 +5,7 @@ void call(){
   stage("b"){
     println("bbbb")
   }
+  stage("c"){
+    println("cccc")
+  }
 }
