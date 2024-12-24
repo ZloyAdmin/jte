@@ -10,4 +10,7 @@ void call(){
   stage("c"){
     println("cccc")
   }
+  stage("d"){
+    sh "ls -l && hostname"
+  }
 }
